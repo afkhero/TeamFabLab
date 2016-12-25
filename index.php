@@ -58,7 +58,7 @@ and open the template in the editor.
    }
     
   }
-  
+    
  }
 ?>
 <!DOCTYPE html>
@@ -79,11 +79,11 @@ and open the template in the editor.
      <div class="col-md-12">
         
          <div class="form-group">
-             <h2 class="">FabLab Robot Control Sign In</h2>
+             <center><h2 class="">FabLab Robot Control Sign In</h2> </center>
             </div>
         
          <div class="form-group">
-             <hr />
+            <!-- <hr />  -->
             </div>
             
             <?php
@@ -114,22 +114,19 @@ and open the template in the editor.
                 </div>
                 <span class="text-danger"><?php echo $passError; ?></span>
             </div>
-            
-            <div class="form-group">
-             <hr />
-            </div>
-            
+         
             <div class="form-group">
              <button type="submit" class="btn btn-block btn-primary" name="btn-login">Sign In</button>
             </div>
-            
-            <div class="form-group">
-             <button type="submit" class="btn btn-block btn-primary" name="btn-login"><a href="register.php">Register</a></button>
-            </div>
          
             <div class="form-group">
-             <hr />
+             <button type="button" class="btn btn-block btn-link" name="btn-login"><a href="fpass.php">Forgot Password</a></button>
             </div>
+            
+            <div class="form-group">
+             <button type="button" class="btn btn-block btn-link" name="btn-login"><a href="register.php">Register</a></button>
+            </div>
+         
         
         </div>
    
@@ -137,6 +134,14 @@ and open the template in the editor.
     </div> 
 
 </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+ 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+ 
+<link rel="stylesheet" href="style.css" >
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>

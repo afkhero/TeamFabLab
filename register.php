@@ -23,6 +23,9 @@
   $pass = strip_tags($pass);
   $pass = htmlspecialchars($pass);
   
+  $cpass = trim($_POST['cpass']);
+  $cpass = strip_tags($cpass);
+  $cpass = htmlspecialchars($cpass);
   // basic name validation
   if (empty($name)) {
    $error = true;
@@ -57,7 +60,11 @@
   } else if(strlen($pass) < 6) {
    $error = true;
    $passError = "Password must have atleast 6 characters.";
+  } else if($cpass != $pass){
+   $error = true;
+   $passError = "Passwords do not match!";
   }
+  
   
   // password encrypt using SHA256();
   $password = hash('sha256', $pass);
@@ -141,7 +148,15 @@
             <div class="form-group">
              <div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-             <input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="15" />
+             <input type="password" name="pass" class="form-control" placeholder="Enter Password" maxlength="20" />
+                </div>
+                <span class="text-danger"><?php echo $passError; ?></span>
+            </div>
+         
+            <div class="form-group">
+             <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+             <input type="password" name="cpass" class="form-control" placeholder="Confirm Password" maxlength="20" />
                 </div>
                 <span class="text-danger"><?php echo $passError; ?></span>
             </div>
@@ -159,7 +174,7 @@
             </div>
             
             <div class="form-group">
-             <a href="index.php">Sign in Here...</a>
+             <a href="index.php">Sign in Here!</a>
             </div>
         
         </div>
@@ -168,6 +183,14 @@
     </div> 
 
 </div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+ 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+ 
+<link rel="stylesheet" href="style.css" >
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>
