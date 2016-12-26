@@ -22,22 +22,27 @@
 </head>
 <body>
 
- <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
+                  aria-expanded="false" aria-controls="navbar" style="background-color:navy;"> 
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="https://cse.uta.edu/">CSE 4316 FabLab Robot Team</a>
+          <a class="navbar-brand" href="https://cse.uta.edu/" style="background-color:navy; color:white;">CSE 4316 FabLab Robot Team</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="https://fablab.uta.edu/">FabLab Home Page</a></li>
-            <li><a href="https://www.facebook.com/UTAFabLab/">FabLab Facebook Page</a></li>
-            <li><a href="https://fablab.uta.edu/about-fablab">Learn more about FabLab</a></li>
+            <li><a href="https://www.facebook.com/UTAFabLab/" style="background-color:navy; color:white;">
+                    FabLab Facebook Page</a></li>
+            <li><a href="https://fablab.uta.edu/about-fablab" style="background-color:navy; color:white; border-color:white;">
+                    Learn more about FabLab</a></li>
+            <li><a href="deploy.php" style="background-color:green; color:white;">Deploy Robot!</a></li>
+            <li><a href="logout.php?logout" style="background-color:navy; color:white;"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             
@@ -48,15 +53,14 @@
                 <li><a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
                 <!--<li><a href="https://www.google.com"><span style="color:black"></span>&nbsp;Google</a></li> -->
             
-            <div class="form-group">
-             <button type="button" class="btn btn-block btn-default" name="btn-login">
-                 <a href="logout.php?logout"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></button>
+           <!-- <div class="form-group">
+             
             </div>
               </ul>
             </li>
           </ul>
-        </div><!--/.nav-collapse -->
-      </div>
+        </div><!--/.nav-collapse 
+      </div>-->
     </nav> 
 
  <div id="wrapper">
@@ -73,7 +77,8 @@
             Eric Tran, <br> 
             LeAnn Rasmussen, <br> 
             Raghava Vemuri, <br> 
-            Sarah Varghese</h1> <br> 
+            Sarah Varghese</h1> <br>
+            
         </div>
         </div>
     

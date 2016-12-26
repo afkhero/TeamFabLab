@@ -72,7 +72,7 @@
   // if there's no error, continue to signup
   if( !$error ) {
    
-   $query = "INSERT INTO users(userName,userEmail,userPass) VALUES('$name','$email','$password')";
+   $query = "INSERT INTO users(userName,userEmail,userPass,userPermission) VALUES('$name','$email','$password','NORMAL')";
    $res = mysqli_query($conn, $query);
  
    if ($res) {
@@ -109,7 +109,7 @@
      <div class="col-md-12">
         
          <div class="form-group">
-             <h2 class="">Sign Up.</h2>
+             <center><h2 class="">Sign Up</h2></center>
             </div>
         
          <div class="form-group">
@@ -166,7 +166,7 @@
             </div>
             
             <div class="form-group">
-             <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Sign Up</button>
+             <button type="submit" class="btn btn-block btn-primary" name="btn-signup">Register</button>
             </div>
             
             <div class="form-group">
@@ -174,7 +174,7 @@
             </div>
             
             <div class="form-group">
-             <a href="index.php">Sign in Here!</a>
+                <button type="button" class="btn btn-block btn-link" name="btn-signin"><a href="index.php">Sign in Here!</a></button>
             </div>
         
         </div>

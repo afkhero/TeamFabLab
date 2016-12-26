@@ -74,7 +74,7 @@ and open the template in the editor.
 <div class="container">
 
  <div id="login-form">
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="off">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete="on">
     
      <div class="col-md-12">
         
@@ -120,11 +120,11 @@ and open the template in the editor.
             </div>
          
             <div class="form-group">
-             <button type="button" class="btn btn-block btn-link" name="btn-login"><a href="fpass.php">Forgot Password</a></button>
+             <button type="button" class="btn btn-block btn-link" name="btn-fpass"><a href="fpass.php">Forgot Password</a></button>
             </div>
             
             <div class="form-group">
-             <button type="button" class="btn btn-block btn-link" name="btn-login"><a href="register.php">Register</a></button>
+             <button type="button" class="btn btn-block btn-link" name="btn-register"><a href="register.php">Register</a></button>
             </div>
          
         

@@ -57,7 +57,7 @@
 <form class="form-signin" method="POST">
     <center><h2 class="form-signin-heading">Forgot Password</h2></center>
         <div class="input-group">
-	  <span class="input-group-addon" id="basic-addon1">@</span>
+	  <span class="input-group-addon" id="basic-addon1"><span class="glyphicon glyphicon-envelope"></span></span>
 	  <input type="text" name="email" class="form-control" placeholder="Enter your e-mail" required>
 	</div>
 	<br />
