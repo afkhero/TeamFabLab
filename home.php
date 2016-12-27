@@ -17,8 +17,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Welcome - <?php echo $userRow['userName']; ?></title>
-<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"  />
-<link rel="stylesheet" href="style.css" type="text/css" />
+
 </head>
 <body>
 
@@ -26,7 +25,7 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" 
-                  aria-expanded="false" aria-controls="navbar" style="background-color:navy;"> 
+                  aria-expanded="false" aria-controls="navbar"> 
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -36,10 +35,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="https://fablab.uta.edu/">FabLab Home Page</a></li>
+              <li class="active"><a href="home.php">FabLab Robot Team Home Page</a></li>
             <li><a href="https://www.facebook.com/UTAFabLab/" style="background-color:navy; color:white;">
                     FabLab Facebook Page</a></li>
-            <li><a href="https://fablab.uta.edu/about-fablab" style="background-color:navy; color:white; border-color:white;">
+            <li><a href="https://fablab.uta.edu/about-fablab" style="background-color:navy; color:white;">
                     Learn more about FabLab</a></li>
                     <li><a href="permissionCheck.php" style="background-color:green; color:white;">Deploy Robot!</a></li>
             <li><a href="logout.php?logout" style="background-color:navy; color:white;"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
