@@ -41,7 +41,7 @@
                     FabLab Facebook Page</a></li>
             <li><a href="https://fablab.uta.edu/about-fablab" style="background-color:navy; color:white; border-color:white;">
                     Learn more about FabLab</a></li>
-            <li><a href="deploy.php" style="background-color:green; color:white;">Deploy Robot!</a></li>
+                    <li><a href="permissionCheck.php" style="background-color:green; color:white;">Deploy Robot!</a></li>
             <li><a href="logout.php?logout" style="background-color:navy; color:white;"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Sign Out</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -58,9 +58,11 @@
             </div>
               </ul>
             </li>
-          </ul>
+          
         </div><!--/.nav-collapse 
       </div>-->
+           </ul>
+           
     </nav> 
 
  <div id="wrapper">

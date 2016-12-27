@@ -1,6 +1,11 @@
 <?php
 
- ob_start();
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+ob_start();
  session_start();
  require_once 'dbconnect.php';
  
@@ -10,37 +15,14 @@
   exit;
  }
  
- $permission = mysqli_query($conn, "SELECT userPermission FROM users;");
- $rs = mysqli_fetch_all($permission);
- if($rs == 'ADMIN')
- {
-     //Everything should go here if the user is admin
-     echo 'working';
- }
- 
- 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>You have to acquire permission to deploy the robot!</title>
+<title>Access Granted!</title>
 
-<h2><button type="button" class="btn btn-block btn-primary" name="btn-back"><a href="home.php">Go back to home page</a></button>></h2>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
- 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
- 
-<link rel="stylesheet" href="style.css" >
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<center><h1 class="col-md-12">FabLab Robot Deployment Page!</h1></center>
 </head>
-
 </html>
- 
-
- 
- 
- 
